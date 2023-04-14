@@ -1,0 +1,142 @@
+header {
+    font-family: $standard-font;
+}
+
+#header-top {
+    background-color: $core-black;
+    color: $core-white;
+
+    height: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .logo {
+        img {
+            width:150px;
+        }
+    }
+
+    div {
+        margin: auto 2rem;
+    }
+
+    .nav-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 1.1rem;
+        
+        .nav-item {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 4px;
+                bottom: 0;
+                left: 0;
+                background-color: $accent-light-3;
+                transform-origin: bottom left;
+                transition: transform 0.25s ease-out;
+            }
+
+            &:hover:after {
+                transform: scaleX(1);
+            }
+        }
+
+        .nav-active {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 0.2rem;
+                bottom: 0;
+                left: 0;
+                background-color: $accent-light-3;
+            }
+        }
+    }
+   
+    .user {
+        background-color: $accent-light-3;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50px;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+
+        img {
+            height: 2.5rem;
+            width: 2.5rem;
+            margin: auto auto;
+
+        }
+    }
+}
+
+#header-bottom {
+    position: relative;
+    background-color: $accent-light-2;
+    color: $core-white;
+
+    height: 3.25rem;
+
+    padding: 0 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .client-name {
+        padding-top: 0.3rem;
+    }
+
+    .client-name span {
+        font-size: 0.8rem;
+        text-decoration: underline;
+        padding-left: 0.5rem;
+    }
+
+    .client-service {
+        font-size: 0.9rem;
+    }
+
+    .user-expanded {
+        position: absolute;
+        right: 2rem;
+        width: 11rem;
+        height: auto;
+        background-color: $core-white;
+        border: 3px solid $accent-light-3;
+
+        box-shadow: 0px 0px 3px $neutral-6;
+
+        div {
+            margin: 0.3rem;
+            color: $core-black;
+            padding-left: 0.2rem;
+        }
+
+        .user-item {
+            padding-bottom: 0.2rem;
+            border-bottom: 1px solid $neutral-1;
+        }
+
+        .user-logout {
+            color: red;
+        }
+
+    }
+}
+

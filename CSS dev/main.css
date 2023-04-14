@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: DM Sans, Arial, sans-serif;
+}
+
+#header-top {
+  background-color: #000;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#header-top .logo img {
+  width: 150px;
+}
+#header-top div {
+  margin: auto 2rem;
+}
+#header-top .nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1.1rem;
+}
+#header-top .nav-content .nav-item {
+  position: relative;
+}
+#header-top .nav-content .nav-item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #00CEC3;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+#header-top .nav-content .nav-item:hover:after {
+  transform: scaleX(1);
+}
+#header-top .nav-content .nav-active {
+  position: relative;
+}
+#header-top .nav-content .nav-active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2rem;
+  bottom: 0;
+  left: 0;
+  background-color: #00CEC3;
+}
+#header-top .user {
+  background-color: #00CEC3;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#header-top .user img {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: auto auto;
+}
+
+#header-bottom {
+  position: relative;
+  background-color: #8854FC;
+  color: #fff;
+  height: 3.25rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#header-bottom .client-name {
+  padding-top: 0.3rem;
+}
+#header-bottom .client-name span {
+  font-size: 0.8rem;
+  text-decoration: underline;
+  padding-left: 0.5rem;
+}
+#header-bottom .client-service {
+  font-size: 0.9rem;
+}
+#header-bottom .user-expanded {
+  position: absolute;
+  right: 2rem;
+  width: 11rem;
+  height: auto;
+  background-color: #fff;
+  border: 3px solid #00CEC3;
+  box-shadow: 0px 0px 3px #666C69;
+}
+#header-bottom .user-expanded div {
+  margin: 0.3rem;
+  color: #000;
+  padding-left: 0.2rem;
+}
+#header-bottom .user-expanded .user-item {
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #D3D7D6;
+}
+#header-bottom .user-expanded .user-logout {
+  color: red;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  font-family: DM Sans, Arial, sans-serif;
+}
+
+#footer-top, #footer-bottom {
+  background-color: #000;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#footer-top .logo img, #footer-bottom .logo img {
+  width: 150px;
+}
+#footer-top div, #footer-bottom div {
+  margin: auto 2rem;
+}
+#footer-top .footer-content, #footer-bottom .footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#footer-bottom {
+  border-top: 1px solid #666C69;
+}
+
+.buttons {
+  margin: 10rem 1rem 0 1rem;
+}
+.buttons div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+button {
+  font-family: DM Sans, Arial, sans-serif;
+  font-size: 1.1rem;
+  padding: 0.7rem;
+  border: none;
+}
+
+.btn-1 {
+  background-color: #CE0099;
+  color: #fff;
+  border: 2px solid #CE0099;
+}
+.btn-1:hover {
+  background-color: #7A004F;
+}
+
+.btn-2 {
+  background-color: #8854FC;
+  color: #fff;
+  border: 2px solid #8854FC;
+}
+.btn-2:hover {
+  background-color: #312780;
+}
+
+.btn-3 {
+  background-color: #00CEC3;
+  color: #fff;
+  border: 2px solid #00CEC3;
+}
+.btn-3:hover {
+  background-color: #1CA1AF;
+}
+
+.lp-btn-1 {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #CE0099;
+}
+.lp-btn-1:hover {
+  background-color: #7A004F;
+  color: #fff;
+}
+
+.lp-btn-2 {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #8854FC;
+}
+.lp-btn-2:hover {
+  background-color: #312780;
+  color: #fff;
+}
+
+.lp-btn-3 {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #00CEC3;
+}
+.lp-btn-3:hover {
+  background-color: #1CA1AF;
+  color: #fff;
+}
+
+.blocked-btn {
+  background-color: #A7B0AD;
+  color: #000;
+  border: 2px solid #A7B0AD;
+}
+
+.radios {
+  margin: 3rem 1rem;
+}/*# sourceMappingURL=main.css.map */
