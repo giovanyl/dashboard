@@ -98,10 +98,36 @@
                     <th class="table-2">Date</th>
                     <th class="table-3">State</th>
                     <th class="table-4"></th>
-                    <th class="table-5"></th>
+                    <th class="table-5">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#ffffff" fill="none" d="M2 2L10 10V20L14 22V10L22 2H2Z"></path>
+                        </svg>
+                    </th>
                 </tr>
             </thead>
             <tbody>
+                <tr class="filter-expanded">
+                    <td>
+                        <div>
+                            <input type="checkbox" name="include-deleted" class="deleted-check" value="true">
+                            <label for="include-deleted">Include archived</label>
+                        </div>
+                        <div>
+                            <label for="sort-by">Sort By:</label>
+                            <select name="sort-by" class="dropdown">
+                                <option value="assessment-name">Assessment Name</option>
+                                <option value="date">Date</option>
+                                <option value="State">State</option>
+                                <option value="Recommendations">Recommendations</option>
+                            </select>
+                        
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
                 <tr>
                     <td>Assessment 1</td>
                     <td>01/01/2023</td>

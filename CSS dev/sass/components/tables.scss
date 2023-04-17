@@ -41,6 +41,7 @@ th {
 
     &.table-5 {
         width: 10%;
+        text-align: end;
     }
 }
 
@@ -60,4 +61,27 @@ tr:nth-child(odd) {
 
 tr td:nth-child(4) {
     font-weight: bold;
+}
+
+tr {
+    &.filter-expanded {
+        background-color: $accent-dark-3;
+
+        td {
+            background-color: $accent-dark-3;
+            color: $core-white;
+            padding-bottom: 0.5rem;
+            
+            &:nth-child(1) {
+                display: flex;
+                flex-direction: row;
+        
+                justify-content: space-between;
+
+                width: 75%;
+            }
+    
+        }
+    }
+
 }
