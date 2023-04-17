@@ -173,6 +173,7 @@ button {
 }
 .btn-1:hover {
   background-color: #7A004F;
+  border-color: #7A004F;
 }
 
 .btn-2 {
@@ -182,6 +183,7 @@ button {
 }
 .btn-2:hover {
   background-color: #312780;
+  border-color: #312780;
 }
 
 .btn-3 {
@@ -191,6 +193,7 @@ button {
 }
 .btn-3:hover {
   background-color: #1CA1AF;
+  border-color: #1CA1AF;
 }
 
 .lp-btn-1 {
@@ -200,6 +203,7 @@ button {
 }
 .lp-btn-1:hover {
   background-color: #7A004F;
+  border-color: #7A004F;
   color: #fff;
 }
 
@@ -210,6 +214,7 @@ button {
 }
 .lp-btn-2:hover {
   background-color: #312780;
+  border-color: #312780;
   color: #fff;
 }
 
@@ -220,6 +225,7 @@ button {
 }
 .lp-btn-3:hover {
   background-color: #1CA1AF;
+  border-color: #1CA1AF;
   color: #fff;
 }
 
@@ -229,6 +235,67 @@ button {
   border: 2px solid #A7B0AD;
 }
 
+input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+}
+input[type=radio].radio-1::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: #CE0099;
+}
+input[type=radio].radio-2::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: #8854FC;
+}
+input[type=radio].radio-3::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: #00CEC3;
+}
+input[type=radio].radio-1:checked::before, input[type=radio].radio-2:checked::before, input[type=radio].radio-3:checked::before {
+  transform: scale(1);
+}
+
 .radios {
   margin: 3rem 1rem;
+}
+.radios div {
+  width: 40rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.radios .radio-heading {
+  font-family: DM Sans, Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 1.75rem;
+  text-align: center;
+}
+.radios .radio-1 {
+  border: 3px solid #CE0099;
+}
+.radios .radio-2 {
+  border: 3px solid #8854FC;
+}
+.radios .radio-3 {
+  border: 3px solid #00CEC3;
 }/*# sourceMappingURL=main.css.map */
