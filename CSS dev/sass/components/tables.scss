@@ -1,0 +1,63 @@
+.tables {
+    margin: 3rem 1rem;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+}
+
+table {
+    width: 80%;
+    border: 2px solid $accent-dark-3;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th {
+    font-family: $standard-font;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    
+    background-color: $accent-dark-3;
+    text-align: start;
+
+    &.table-1 {
+        width: 50%;
+    }
+
+    &.table-2 {
+        width: 12.5%;
+    }
+
+    &.table-3 {
+        width: 17.5%;
+    }
+
+    &.table-4 {
+        width: 10%;
+    }
+
+    &.table-5 {
+        width: 10%;
+    }
+}
+
+td {
+    font-family: $standard-font;
+
+    padding: 0.25rem 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: $core-white;
+}
+
+tr:nth-child(odd) {
+    background-color: $neutral-1;
+}
+
+tr td:nth-child(4) {
+    font-weight: bold;
+}

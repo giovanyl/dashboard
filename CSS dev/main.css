@@ -298,4 +298,59 @@ input[type=radio].radio-1:checked::before, input[type=radio].radio-2:checked::be
 }
 .radios .radio-3 {
   border: 3px solid #00CEC3;
+}
+
+.tables {
+  margin: 3rem 1rem;
+}
+.tables h2 {
+  margin-bottom: 2rem;
+}
+
+table {
+  width: 80%;
+  border: 2px solid #1CA1AF;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th {
+  font-family: DM Sans, Arial, sans-serif;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #1CA1AF;
+  text-align: start;
+}
+th.table-1 {
+  width: 50%;
+}
+th.table-2 {
+  width: 12.5%;
+}
+th.table-3 {
+  width: 17.5%;
+}
+th.table-4 {
+  width: 10%;
+}
+th.table-5 {
+  width: 10%;
+}
+
+td {
+  font-family: DM Sans, Arial, sans-serif;
+  padding: 0.25rem 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+tr:nth-child(odd) {
+  background-color: #D3D7D6;
+}
+
+tr td:nth-child(4) {
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
