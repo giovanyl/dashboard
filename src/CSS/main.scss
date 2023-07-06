@@ -1,0 +1,22 @@
+// Imports\
+// Base
+@import "./sass/base/reset.scss";
+@import "./sass/base/typography.scss";
+
+// Utilities
+@import "./sass/utilities/colours.scss";
+
+// Layouts
+@import "./sass/layouts/header.scss";
+@import "./sass/layouts/footer.scss";
+
+// Components
+@import "./sass/components/buttons.scss";
+@import "./sass/components/radios.scss";
+@import "./sass/components/tables.scss";
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+// Pages
+@import "./sass/pages/template_dashboard.scss";

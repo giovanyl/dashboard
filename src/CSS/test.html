@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- This page is used to demo UI components -->
+
+    <!-- Expanded header -->
+    <header>
+        <div id="header-top">
+            <div class="logo"><img src="./images/6point6 logo/White-logo.png" alt=""></div>
+            <div class="nav-content">
+                <div class="nav-active">Home</div>
+                <div class="nav-item">Assessments</div>
+                <div class="nav-item">Recommendations</div>
+                <div class="nav-item">Reports</div>
+            </div>
+            <div class="user">
+                <img src="./icons/user-WHITE.png" alt="">
+            </div>
+        </div>
+        <div id="header-bottom">
+            <div>
+                <div class="client-name">Company Name Here Ltd <span>(Change)</span></div>
+                <div class="client-service">Service Name</div>
+            </div>
+            <div class="user-expanded">
+                <div class="user-item">Self Assessment</div>
+                <div class="user-item">Logbook</div>
+                <div class="user-item">Assessment Admin</div>
+                <div class="user-item">User Settings</div>
+                <div class="user-logout">Log Out</div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Buttons -->
+    <div class="buttons">
+        <!-- Buttons in different colours -->
+        <h2>Buttons</h2>
+        <div>
+            <button class="btn-1">This is a standard button</button>
+            <button class="btn-2">This is a standard button</button>
+            <button class="btn-3">This is a standard button</button>
+        </div>
+
+        <!-- Low priority buttons -->
+        <div>
+            <button class="lp-btn-1">Low Priority button</button>
+            <button class="lp-btn-2">Low Priority button</button>
+            <button class="lp-btn-3">Low Priority button</button>
+        </div>
+
+        <!-- Blocked button -->
+        <div>
+            <button class="blocked-btn">Blocked button</button>
+        </div>
+    </div>
+
+    <!-- Radios -->
+    <div class="radios">
+        <h2>Radio Buttons and Toggle Switches</h2>
+        <!-- Headings if to be placed above buttons -->
+        <div>
+            <p class="radio-heading">1</p>
+            <p class="radio-heading">2</p>
+            <p class="radio-heading">3</p>
+            <p class="radio-heading">4</p>
+            <p class="radio-heading">5</p>
+            <p class="radio-heading">6</p>
+        </div>
+
+        <div>
+            <input type="radio" name="test-radio" class="radio-1" value="1">
+            <input type="radio" name="test-radio" class="radio-2" value="2">
+            <input type="radio" name="test-radio" class="radio-3" value="3">
+            <input type="radio" name="test-radio" class="radio-1" value="4">
+            <input type="radio" name="test-radio" class="radio-2" value="5">
+            <input type="radio" name="test-radio" class="radio-3" value="6">
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="tables">
+        <h2>Table example</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Assessment Name</th>
+                    <th>Date</th>
+                    <th>State</th>
+                    <th></th>
+                    <th>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+                            <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1" stroke="#ffffff" fill="none" d="M2 2L10 10V20L14 22V10L22 2H2Z"></path>
+                        </svg>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="filter-expanded">
+                    <td>
+                        <div>
+                            <input type="checkbox" name="include-deleted" class="deleted-check" value="true">
+                            <label for="include-deleted">Include archived</label>
+                        </div>
+                        <div>
+                            <label for="sort-by">Sort By:</label>
+                            <select name="sort-by" class="dropdown">
+                                <option value="assessment-name">Assessment Name</option>
+                                <option value="date">Date</option>
+                                <option value="State">State</option>
+                                <option value="Recommendations">Recommendations</option>
+                            </select>
+                        
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Assessment 1</td>
+                    <td>01/01/2023</td>
+                    <td>Completed</td>
+                    <td>View</td>
+                    <td>Actions +</td>
+                </tr>
+                <tr>
+                    <td>Assessment 2</td>
+                    <td>01/01/2023</td>
+                    <td>Draft</td>
+                    <td>View</td>
+                    <td>Actions +</td>
+                </tr>
+                <tr>
+                    <td>Assessment 3</td>
+                    <td>01/01/2023</td>
+                    <td>Draft</td>
+                    <td>View</td>
+                    <td>Actions +</td>
+                </tr>
+                <tr>
+                    <td>Assessment 4</td>
+                    <td>01/01/2023</td>
+                    <td>Draft</td>
+                    <td>View</td>
+                    <td>Actions +</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div id="footer-top">
+            <div class="footer-content">
+                <div class="logo"><img src="./images/6point6 logo/White-logo.png" alt=""></div>
+                <div>Change company/service</div>
+            </div>
+            <div class="footer-content">
+                <div>Help</div>
+                <div>Contact Us</div>
+            </div>
+        </div>
+
+        <div id="footer-bottom">
+            <div class="footer-content">
+                <div>Privacy Policy</div>
+                <div>Cookie Policy</div>
+            </div>
+            <div class="footer-content">
+                <div>© 2023 6point6. All Rights Reserved.</div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+  

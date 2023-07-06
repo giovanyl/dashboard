@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App'; // the app component is being imported here from '/app.js file/
-import { AuthContextProvider } from './store/auth-context';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from './app'
+import { BrowserRouter } from "react-router-dom";
 
-// This the first file which will start when the app stars
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const root = ReactDOM.createRoot(document.getElementById('root')); // selecting the div with the id of 'root' and rendering app content in it
 root.render(
-	<AuthContextProvider>
-		<App />
-	</AuthContextProvider>
+    <React.StrictMode>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </React.StrictMode>
 );

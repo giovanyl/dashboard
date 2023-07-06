@@ -1,0 +1,29 @@
+.App {
+    height: 100%;
+}
+
+
+#tp-dashboard {
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    h1 {
+    font-family: $standard-font;
+    font-size: 2rem;
+    margin: 1rem 0 0 2rem;
+    }
+
+    .btn-1 {
+        margin: 1rem 0 0 2rem;
+    }
+
+    table {
+        margin-top: 10rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}

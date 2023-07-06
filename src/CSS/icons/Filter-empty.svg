@@ -1,0 +1,10 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke="#221b38" fill="none" d="M20 22C18.9 22 18 21.1 18 20V9H22V20C22 21.1 21.1 22 20 22Z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke="#221b38" fill="none" d="M18 9V2H2V22H20C18.9 22 18 21.1 18 20V9Z"></path>
+<path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke="#221b38" d="M5 19H15"></path>
+<path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke="#221b38" d="M12 9H15"></path>
+<path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke="#221b38" d="M12 6H15"></path>
+<path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke="#221b38" d="M5 16H15"></path>
+<path stroke-linejoin="round" stroke-linecap="square" stroke-miterlimit="10" stroke-width="1" stroke="#221b38" d="M5 13H15"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1" stroke="#221b38" fill="none" d="M9 5H5V10H9V5Z"></path>
+</svg>

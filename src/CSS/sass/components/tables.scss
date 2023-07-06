@@ -1,0 +1,150 @@
+.tables {
+    margin: 3rem 1rem;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+}
+
+table {
+    width: 80%;
+    border: 2px solid $accent-dark-3;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.table-filter {
+    padding: 0;
+    background-color: $accent-dark-3;
+}
+
+.expanded-filter {
+    display: flex;
+    flex-direction: row;
+
+    .archived {
+        label {
+            margin-left: 0.25rem;
+        }
+    }
+
+    .global-filter {
+        margin-left: 3%;
+    }
+}
+
+th {
+    font-family: $standard-font;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    
+    background-color: $accent-dark-3;
+    text-align: start;
+
+    &:nth-child(1) {
+        width: 12.5%;
+    }
+
+    &:nth-child(2) {
+        width: 12.5%;
+    }
+
+    &:nth-child(3) {
+        width: 10%;
+    }
+
+    &:nth-child(4) {
+        width: 55%;
+    }
+
+    &:nth-child(5) {
+        width: 10%;
+        text-align: end;
+    }
+}
+
+td {
+    font-family: $standard-font;
+
+    padding: 0.25rem 1rem;
+}
+
+tr:nth-child(even) {
+    background-color: $core-white;
+}
+
+tr:nth-child(odd) {
+    background-color: $neutral-1;
+}
+
+tr td:nth-child(4) {
+    font-weight: bold;
+}
+
+tr {
+    &.filter-expanded {
+        background-color: $accent-dark-3;
+
+        td {
+            background-color: $accent-dark-3;
+            color: $core-white;
+            padding-bottom: 0.5rem;
+            
+            &:nth-child(1) {
+                display: flex;
+                flex-direction: row;
+        
+                justify-content: space-between;
+
+                width: 75%;
+            }
+    
+        }
+    }
+
+}
+
+tfoot {
+    td {
+        background-color: $accent-dark-3;
+        color: $core-white;
+        text-align: end;
+        padding-right: 0;
+
+        .pageIndicator {
+            margin-right: 2rem;
+        }
+
+        .pageSwitch {
+            margin-right: 2rem;
+
+            input {
+                width: 3rem;
+                font-family: $standard-font;
+            }
+        }
+
+        button {
+            padding: 0.3rem 0.5rem;
+            background-color: $accent-dark-3;
+
+            &:hover{
+                background-color: rgba(0,206,195,0.5)
+            }
+        }
+
+        .tableNavLeft {
+            border-left: 1px solid $accent-light-3;
+            border-right: 1px solid $accent-light-3;
+        }
+
+        .tableNavRight {
+            border-right: 1px solid $accent-light-3;
+        }
+    }
+}   
+
